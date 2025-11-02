@@ -68,3 +68,17 @@ const user = {idade: '20',email: "pablocruz@gmail.com", password: 'teste123123'}
 console.log(user)
 console.log(typeof user)
 
+//métodos de string
+//Métodos de manipulação de string
+const fullName = "Pablo Cruz"
+console.log(fullName.length)
+
+const stringToArray = fullName.split('')
+console.log(stringToArray)
+
+console.log(fullName.toLocaleLowerCase())
+console.log(fullName.toLocaleUpperCase())
+
+console.log(fullName.indexOf('Pablo'))
+
+console.log(fullName.slice(0, 6))
