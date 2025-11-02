@@ -82,3 +82,27 @@ console.log(fullName.toLocaleUpperCase())
 console.log(fullName.indexOf('Pablo'))
 
 console.log(fullName.slice(0, 6))
+
+//Métodos de Mnipulação de Arrays
+
+const list = ['a', 'b', 'c', 'd', 'e'] //Começam sempre do 0
+
+console.log(list.length)
+
+console.log(list[3])
+//Adicionar valores a minha list
+list[5] = 'f'
+console.log(list)
+//Retirar valores da minha lista
+console.log(list[list.length -1])
+
+//Adicionar um elemento ao final
+list.push('g')
+
+//Remover um elemento do final da minha lista
+list.pop
+console.log(list)
+
+//Adicionar um elemento ao inicio
+list.unshift('a')
+console.log(list)
