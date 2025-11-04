@@ -106,3 +106,8 @@ console.log(list)
 //Adicionar um elemento ao inicio
 list.unshift('a')
 console.log(list)
+
+//objetos
+const product = {
+    name: 'Pablo',
+}
