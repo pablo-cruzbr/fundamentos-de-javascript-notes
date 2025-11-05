@@ -125,12 +125,29 @@ console.log(product['Main color'])
 //Outra forma de acessar as propriedades de um objetos
 const {price, inStock} = product
 console.log(price)
-console(inStock)
+console.log(inStock)
 
 //Desetruturação de Arrays
 const [n1, n2] = list
 
 console.log(n1)
 console.log(n2)
+
+//JSON - Javascript Object Notation 
+// Temos uma estrutura de dados e ela é utilizada para comunicação com API's
+
+const dog = {
+    name: 'Shark',
+    age: 10,
+}
+
+console.log('Converter um Objeto em JSON: JSON.stringfy')
+const json = JSON.stringify(dog)
+console.log(json)
+
+console.log('Converter um JSON em Objeto: JSON.parse ')
+const obj = JSON.parse(json)
+console.log(obj)
+
 
 
