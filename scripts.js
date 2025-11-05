@@ -150,4 +150,26 @@ const obj = JSON.parse(json)
 console.log(obj)
 
 
+//Estruturas condicionais 
+const a = 10
+
+if(a > 8){
+    console.log("A é maior que 8")
+}
+const b = 'Matheus'
+
+if(b === 'João'){
+    console.log('O nome é João')
+}else if (b === 'Pedro') {
+    console.log('O nome é Pedro')
+}else {
+    console.log('Não encontramos o nome do usuário!')
+}
+
+const someNumber = 14
+
+//if ternário
+let testingANmber = someNumber < 20 ? 'Yes' : 'No'
+console.log(testingANmber)
+
 
