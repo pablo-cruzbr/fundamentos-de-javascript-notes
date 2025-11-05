@@ -245,8 +245,20 @@ console.log('Maria', 'Almeida')
 const meuNomeCompleto = nomeCompleto('Ricardo', 'Nascimento')
 console.log(meuNomeCompleto)
 
+//Procurar mais sobre as diferenças das duas
+//Arrow funcions
+const myArrowFunction = (a,b) => {
+    return a + b
+}
+
+console.log(myArrowFunction(5, 5))
 
 
+const sumAllSintaxeArrowFunction = [10,20,30,40,50].reduce((total,number) => {
+    return total + number
+})
+console.log(sumAllSintaxeArrowFunction)
 
-
-
+//é uma mais simples de fazer operações menores com uma sintaxe mais resumida
+const mySimpleArrowFunction = (a,b) => a+b
+console.log(mySimpleArrowFunction(5,5))
