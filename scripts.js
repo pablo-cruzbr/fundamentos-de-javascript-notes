@@ -169,7 +169,34 @@ if(b === 'João'){
 const someNumber = 14
 
 //if ternário
+//Muito utilizado em layout no React 
 let testingANmber = someNumber < 20 ? 'Yes' : 'No'
 console.log(testingANmber)
+
+//Estruturas de repetição - Loop
+console.log('Estruturas de Repetição:')
+
+console.log('Loop usando while: ')
+const myList = [1,2,3,4,5]
+let counter = 0
+
+while (counter < myList.length){
+    console.log('Inprimindo: ' + myList[counter])
+    counter++
+}
+
+console.log('Loop usando For')
+const mySecondList = ['a','b','c','d','e']
+console.log('variável, condição, Incremento')
+for (let counter = 0; counter < mySecondList.length; counter++){
+    console.log(`Inprimindo: ${mySecondList[counter]}`) //template literals
+}
+
+
+
+
+
+
+
 
 
