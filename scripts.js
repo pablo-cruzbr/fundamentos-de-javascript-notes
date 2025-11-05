@@ -193,7 +193,7 @@ for (let counter = 0; counter < mySecondList.length; counter++){
 }
 
 //métodos de array -> repetição
-//forEach, map, filter
+//forEach, map, filter,reduce
 //forEach conseguimos repetir todos os itens baseado em uma função anônima. Substitui Loops. Então ele entra no lugar do Loop
 
 const names = ["Matheus", "Emerson", "Pablo", "Murilo"]
@@ -228,6 +228,22 @@ const sumAll = [10,20,30,40,50].reduce(function(total,number){
 console.log(sumAll)
 
 
+//funções: Blocos de códigos que pode ser reutilizado em várias partes do nosso sistema.
+//Precisamos invocá-la, ativá-la
+function minhaFuncao(){
+    console.log('Ola função!')
+}
+minhaFuncao()
+
+function nomeCompleto(nome, sobrenome){
+    return `O nome completo é: ${nome} ${sobrenome}`
+}
+
+console.log('Pablo', 'Cruz')
+console.log('Maria', 'Almeida')
+
+const meuNomeCompleto = nomeCompleto('Ricardo', 'Nascimento')
+console.log(meuNomeCompleto)
 
 
 
