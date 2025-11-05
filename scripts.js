@@ -262,3 +262,23 @@ console.log(sumAllSintaxeArrowFunction)
 //é uma mais simples de fazer operações menores com uma sintaxe mais resumida
 const mySimpleArrowFunction = (a,b) => a+b
 console.log(mySimpleArrowFunction(5,5))
+
+
+//Classes - Orientação a objetos
+
+class Product {
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+
+    ProductDetails(){
+        return `O nome do produto é ${this.name} e o preço é ${this.price}` 
+    }
+}
+const socks = new Product('Meia branca', 10.99)
+const shirt = new Product('Camisa preta', 15,99)
+
+console.log(socks.name)
+console.log(shirt.name)
+console.log(shirt.ProductDetails())
