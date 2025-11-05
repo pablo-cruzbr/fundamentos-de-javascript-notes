@@ -108,6 +108,29 @@ list.unshift('a')
 console.log(list)
 
 //objetos
+//conserguimos ter uma ou N propriedade e o valor dela
+//Para acessar por . , []
 const product = {
     name: 'Pablo',
+    price: 15.99,
+    inStock: true,
+    sizes: ['P',  'M', 'G'],
+    'Main color' : 'blue0,'
 }
+console.log(product.name)
+console.log(product['name'])
+console.log(product['Main color'])
+
+//destructuring - Desestruturar
+//Outra forma de acessar as propriedades de um objetos
+const {price, inStock} = product
+console.log(price)
+console(inStock)
+
+//Desetruturação de Arrays
+const [n1, n2] = list
+
+console.log(n1)
+console.log(n2)
+
+
