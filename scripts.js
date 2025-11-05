@@ -192,6 +192,40 @@ for (let counter = 0; counter < mySecondList.length; counter++){
     console.log(`Inprimindo: ${mySecondList[counter]}`) //template literals
 }
 
+//métodos de array -> repetição
+//forEach, map, filter
+//forEach conseguimos repetir todos os itens baseado em uma função anônima. Substitui Loops. Então ele entra no lugar do Loop
+
+const names = ["Matheus", "Emerson", "Pablo", "Murilo"]
+
+names.forEach(function (name){
+    console.log(`O nome é: ${name}`)
+})
+
+//Map: Modificar um dado, passamos em cada um dos itens da lista e modificamos dados da array.
+const  modificamosNames = names.map(function (name){
+    if(name === 'Pablo') {
+        return(name = 'Sr. Pablo')
+    }else {
+        return name
+    }
+})
+console.log(modificamosNames)
+
+//Filter: vamos criar um filtro para trazer apenas os elementos que queremos.
+const bigNumbers = [1,2,3,4,5,10,100].filter(function(number){
+    return number >= 5
+})
+
+console.log(bigNumbers)
+
+//Reduce: Conseguimos reduzir um array inteiro a um elemento só, ou seja, uma soma.
+
+const sumAll = [10,20,30,40,50].reduce(function(total,number){
+    return total + number
+})
+
+console.log(sumAll)
 
 
 
