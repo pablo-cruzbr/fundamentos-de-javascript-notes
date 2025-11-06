@@ -282,3 +282,21 @@ const shirt = new Product('Camisa preta', 15,99)
 console.log(socks.name)
 console.log(shirt.name)
 console.log(shirt.ProductDetails())
+
+//herança 
+//Estende uma classe
+class SuperProduct {
+    constructor(name, price, size) {
+        this.name = name
+        this.price = price
+        this.size = size
+    }
+    showAdjective(adjective){
+        return `O ${this.name} é muito ${adjective}`
+    }
+}
+
+const tenis = new SuperProduct('Tênis azul', 59.9, '40')
+console.log(tenis.name)     
+console.log(tenis.size)     
+console.log(tenis.showAdjective('Ótimo'))
