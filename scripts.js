@@ -328,7 +328,7 @@ texts.forEach((text) =>{
 
 //Manipulando Texto
 title.textContent = 'Mudei o texto'
-text[0].innerHTML = '<span>Alteramos o HTML deste elemento</span>'
+texts[0].innerHTML = '<span>Alteramos o HTML deste elemento</span>'
 
 texts[1].style.backgroundColor = 'red'
 
@@ -343,5 +343,12 @@ texts[3].classList.remove('text')
 //Remover textos
 texts[1].remove()
 
+
+//Eventos
+const btn = document.querySelector('#btn')
+
+btn.addEventListener('click', function () {
+    texts[2].style.color = 'blue'
+})
 
 
