@@ -307,3 +307,21 @@ console.log(tenis.name)
 console.log(tenis.size)     
 console.log(tenis.showAdjective('Ótimo'))
 SuperProduct.sayHello()
+
+// DOM - document Object Model
+//Seleção de Elementos
+
+const title = document.getElementById('title') 
+console.log(title)
+
+const sameTitle = document.querySelectorAll('title') 
+console.log(sameTitle)
+
+const texts = document.querySelectorAll('.text')
+console.log(texts)
+
+console.log(texts[1])
+
+texts.forEach((text) =>{
+    console.log(text.textContent.toLocaleUpperCase())
+})
