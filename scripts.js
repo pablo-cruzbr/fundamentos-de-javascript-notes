@@ -325,3 +325,23 @@ console.log(texts[1])
 texts.forEach((text) =>{
     console.log(text.textContent.toLocaleUpperCase())
 })
+
+//Manipulando Texto
+title.textContent = 'Mudei o texto'
+text[0].innerHTML = '<span>Alteramos o HTML deste elemento</span>'
+
+texts[1].style.backgroundColor = 'red'
+
+//Adicionar classes
+texts[2].classList.add('my-class')
+
+//Remover classes
+texts[2].classList.remove('text')
+
+texts[3].classList.remove('text')
+
+//Remover textos
+texts[1].remove()
+
+
+
