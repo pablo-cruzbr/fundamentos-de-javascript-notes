@@ -294,9 +294,16 @@ class SuperProduct {
     showAdjective(adjective){
         return `O ${this.name} é muito ${adjective}`
     }
+
+    //métodos estáticos static 
+    //podemos executar diretamente da classe
+   static sayHello() {
+        console.log('Hello')
+    }
 }
 
 const tenis = new SuperProduct('Tênis azul', 59.9, '40')
 console.log(tenis.name)     
 console.log(tenis.size)     
 console.log(tenis.showAdjective('Ótimo'))
+SuperProduct.sayHello()
