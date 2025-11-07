@@ -83,7 +83,7 @@ console.log(fullName.indexOf('Pablo'))
 
 console.log(fullName.slice(0, 6))
 
-//Métodos de Mnipulação de Arrays
+//Métodos de Manipulação de Arrays
 
 const list = ['a', 'b', 'c', 'd', 'e'] //Começam sempre do 0
 
@@ -108,7 +108,7 @@ list.unshift('a')
 console.log(list)
 
 //objetos
-//conserguimos ter uma ou N propriedade e o valor dela
+//conseguimos ter uma ou N propriedade e o valor dela
 //Para acessar por . , []
 const product = {
     name: 'Pablo',
@@ -192,8 +192,9 @@ for (let counter = 0; counter < mySecondList.length; counter++){
     console.log(`Inprimindo: ${mySecondList[counter]}`) //template literals
 }
 
-//métodos de array -> repetição
+//Métodos de array -> repetição
 //forEach, map, filter,reduce
+
 //forEach conseguimos repetir todos os itens baseado em uma função anônima. Substitui Loops. Então ele entra no lugar do Loop
 
 const names = ["Matheus", "Emerson", "Pablo", "Murilo"]
